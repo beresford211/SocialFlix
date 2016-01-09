@@ -160,6 +160,11 @@ i {
   font-size: 25px;
 }
 
+a#facebookBtn {
+  color: white;
+  background-color: #425F9C;
+}
+
   /* For mobile phones: */
 @media only screen and (max-width: 900px) {
    [class*="col-"] {
