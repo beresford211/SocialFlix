@@ -27,8 +27,8 @@ h3,h2 {
 }
 
 #messageDiv {
-  padding: 5%;
-  height: 85%;
+/*  padding: 5%;
+  height: 85%;*/
 }
 
 #send-chat-btn {
@@ -55,7 +55,6 @@ h3,h2 {
 }
 
 .videoPlayer {
-  width: 640px;
   height: 360px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -77,17 +76,15 @@ h3,h2 {
 
 #search-input-container {
   height: 50px;
-  width: 640px;;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-  margin-top: 10%;
   background-color: #fff;
   border: 2px solid #32b7f7;
 }
 
 #youtubeSearchInput {
-  width: 75%;
+  width: 70%;
   height: 30px;
   border: 1px solid #32b7f7;
   border-radius: 4px;
@@ -97,7 +94,7 @@ h3,h2 {
 }
 
 #search-btn {
-  width: 140px;
+  width: 25%;
   margin-left: 1%;
   height: 25px;
   color: #fff;
@@ -107,10 +104,8 @@ h3,h2 {
 }
 
 #saved-search-results-container {
-  height: 500px;
   width: 80%;
   margin-left: 10%;
-  margin-top: 20%;
   background-color: #fff;
   border: 2px solid #32b7f7;
 }
@@ -118,7 +113,7 @@ h3,h2 {
 #show-saved-results-btn {
   width: 40%;
   margin-top: 10px;
-  margin-left: 10%;
+  margin-left: 5%;
   color: #fff;
   background-color: #09a3ed;
   border: 1px solid #32b7f7;
@@ -126,12 +121,17 @@ h3,h2 {
 }
 
 #show-searched-results-btn {
-  width: 40%;
+  width: 51%;
   margin-top: 10px;
   color: #fff;
   background-color: #09a3ed;
   border: 1px solid #32b7f7;
   border-radius: 4px;
+}
+
+.navBarStyles{
+  background-color: #32b7f7; border-bottom: 2px solid #32b7f7;
+  border-color: #32b7f7;
 }
 
 
@@ -144,6 +144,7 @@ h3,h2 {
 }
 
 #search-results-container, #saved-results-container {
+  text-align: center;
   height: 435px;
   width: 90%;
   margin: 5%;
@@ -154,7 +155,6 @@ h3,h2 {
 #search-results, #saved-results {
   height: 355px; 
   overflow: scroll;
-  margin-left: 20%;
 }
 
 .line-break {
