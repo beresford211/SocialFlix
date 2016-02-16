@@ -14,38 +14,38 @@
       }
     </script>
 
-    <nav style="background-color: #32b7f7; border-bottom: 1px solid #32b7f7;" class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navBarStyles">
       <div class="container-fluid">
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <a style="margin-left: 80px" class="navbar-brand" href="/home">
+            <a class="navbar-brand" href="/home">
             Social Flix
             <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
             </a>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a style="margin-right: 45px" href="/login">Logout</a></li>
+            <li class="active"><a href="/login">Logout</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <div class="row">
       <!-- search queries container -->
-      <div class="col-sm-3">
+      <div class="col-sm-12 col-md-3 col-lg-3">
         <div id="saved-search-results-container">
           <button id="show-saved-results-btn"><i class="fa fa-bookmark"></i>Saved</button>
           <button id="show-searched-results-btn"><i class="fa fa-search"></i>Searched</button>
           <div id="disable-functionality">
             <div id="search-results-container">
-              <h3>Searched Videos</h3>
+              <h4>Searched Videos</h4>
               <form id='urlID'>
                 <div id="saved-results">
                 </div>
               </form>
             </div>
             <div id="saved-results-container">
-              <h3>Saved Videos</h3>
+              <h4>Saved Videos</h4>
               <form id='urlID'>
                 <div id="saved-results">
                 </div>
@@ -55,7 +55,8 @@
         </div>
       </div>
 
-      <div class='side-border col-sm-6'>
+      <div class='side-border col-sm-12 col-md-7 col-lg-7'>
+        <div class="tesingTesting">
         <div id="search-input-container">
           <input id='youTubeSearchInput' type="text" placeholder=" Search Youtube Videos...">
             <button id="search-btn"><i class="fa fa-youtube-square"></i>Search</button>
@@ -79,9 +80,10 @@
           <button class="video-controls-style" id="unmuteVid" onclick="unMuteVideo();"><i class="fa fa-volume-up big-icon"></i></button>
         </div>
         <br>
+        </div>
       </div>
       <!-- message container -->
-      <div id='messageDiv' class="col-sm-3">
+      <div id='messageDiv' class="col-sm-12 col-md-2 col-lg-2">
       <div id='room'>
         <h2><strong>Chatroom</strong></h2>
         <br>
@@ -92,7 +94,7 @@
         <form class="form-inline" id='joinChat'>
           <h4>Enter a username:</h4>
           <input type="text" class="input-small" placeholder="Your name" id="name">
-          <input type="button" name="join" id="join" value="Join">
+          <input type="button" name="join" id="join" value="Chat">
         </form>
       </div>
       <div>
