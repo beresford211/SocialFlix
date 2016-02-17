@@ -71,3 +71,9 @@ nav {
 #offer{
   font-size: 15px;
 }
+
+.navBarStyles{
+  background-color: #32b7f7; border-bottom: 2px solid #32b7f7;
+  border-color: #32b7f7;
+  margin-bottom: 0;
+}
