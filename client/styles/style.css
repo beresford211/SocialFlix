@@ -31,6 +31,11 @@ h3,h2 {
   height: 85%;*/
 }
 
+.jumboTronBackground {
+  background-color: #ffff00; 
+}
+
+
 #send-chat-btn {
   height: 25px;
   color: #fff;
@@ -130,7 +135,8 @@ h3,h2 {
 }
 
 .navBarStyles{
-  background-color: #32b7f7; border-bottom: 2px solid #32b7f7;
+  background-color: #32b7f7; 
+  border-bottom: 2px solid #32b7f7;
   border-color: #32b7f7;
 }
 
@@ -180,6 +186,7 @@ i {
 a#facebookBtn {
   color: white;
   background-color: #425F9C;
+  border-radius: 4px;
 }
 
   /* For mobile phones: */
