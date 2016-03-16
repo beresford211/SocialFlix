@@ -1,4 +1,5 @@
 if(process.env.DEPLOYED) {
+	console.log("testing");
 	module.exports = {
 	 'facebookAuth' : {
 	   'clientID'      : 1677657699169186, // your App ID

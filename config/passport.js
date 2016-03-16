@@ -20,7 +20,6 @@ module.exports = function() {
     done(null, id);
   });
 
-  console.log("TESTING TESTING");
   // code for login (use('local-login', new LocalStategy))
   // code for signup (use('local-signup', new LocalStategy))
 

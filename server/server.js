@@ -9,9 +9,9 @@ var people = {};
 var YouTube = require('youtube-node');
 var youTube = new YouTube();
 
-// if(!process.env.DEPLOYED) {
-//   var config = require('./env/config.js');
-// }
+if(!process.env.DEPLOYED) {
+  var config = require('./env/config.js');
+}
 
 var mongoose = require('mongoose');
 var passport = require('passport');
@@ -21,7 +21,7 @@ var registerUser = require('./registerUser.js');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-mongoose.connect('mongodb://nodetojoy:nodetojoy@ds037165.mongolab.com:37165/nodetojoy');
+mongoose.connect('mongodb://donkeykong211:donkeykong@ds011429.mlab.com:11429/donkeykong');
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + './../client'));
@@ -46,7 +46,6 @@ app.use(passport.session());
 
 app.get('/searchYoutube', function(req, res) {
   youTube.setKey(process.env.YOUTUBE_API_KEY || config.YOUTUBE_API_KEY);
-
   youTube.search(req.query.searchItem, 10, function(error, result) {
     if (error) {
       console.log(error);
