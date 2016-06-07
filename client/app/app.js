@@ -35,8 +35,15 @@ $('#search-btn').on('click', function(event) {
 
 // show hide search results & saved results container
 $('#saved-results-container').hide();
-$('#show-searched-results-btn,#show-saved-results-btn').click(function(){
-    $('#search-results-container,#saved-results-container').toggle();
+$('#show-searched-results-btn,#show-saved-results-btn').click(function(e){
+    var currentId = e.target.id;
+    if(currentId === 'show-searched-results-btn'){
+      $('#saved-results-container').hide();
+      $('#search-results-container').show();   
+    } else {
+      $('#saved-results-container').show();
+      $('#search-results-container').hide();
+    }
 });
 
 function muteVideo() {
