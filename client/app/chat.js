@@ -50,7 +50,7 @@ $('#saveToPlaylist').on('click', function() {
     $('#saved-results').append(playlistEntry);
     return;
   } else {
-    alert('You\'ve already saved that song. Silly.');
+    alert('You\'ve already saved that video');
   }
 }); 
 

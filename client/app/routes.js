@@ -19,9 +19,6 @@ module.exports = function(app, passport) {
       res.sendFile(path.join(__dirname + './../signup.html'));
   });
 
-  // app.get('/profile', isLoggedIn, function(req, res) {
-  // })
-
   //route for facebook authentication and login
   app.get('/auth/facebook', passport.authenticate('facebook'));
 
@@ -33,9 +30,6 @@ module.exports = function(app, passport) {
     valId = Number(valId);
 
     savetoDb(userName, valId);
-    //if exists / go to home/
-    // else redirect to sign up/
-    // or save in database
 
     res.redirect('/home');
     });
@@ -57,7 +51,4 @@ module.exports = function(app, passport) {
 
     storeUser(userData);
   }
-
-  // res.redirect('/');
-
 };
