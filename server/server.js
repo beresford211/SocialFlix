@@ -21,7 +21,7 @@ var registerUser = require('./registerUser.js');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-mongoose.connect('mongodb://donkeykong211:donkeykong@ds011429.mlab.com:11429/donkeykong');
+mongoose.connect(process.env.MONGODB_URL);
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + './../client'));
